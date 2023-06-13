@@ -1,0 +1,16 @@
+{
+    "row": [
+        {
+            "Part_Nr": "1234567",
+            "Description": "Part A"
+        },
+        {
+            "Part_Nr": "7890123",
+            "Description": "Part B"
+        },
+        {
+            "Part_Nr": "5A12345",
+            "Description": "Part C"
+        }
+    ]
+}

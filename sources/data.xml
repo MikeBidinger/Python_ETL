@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data typ="TVN">
+<header>John</header>
+<row>
+<KOGR>5678</KOGR>
+<PPG>002</PPG>
+<Part_Nr>1234567</Part_Nr>
+<DH>WX</DH>
+</row>
+<row>
+<KOGR>1234</KOGR>
+<PPG>001</PPG>
+<Part_Nr>5A12345</Part_Nr>
+<DH></DH>
+</row>
+<footer>Doe</footer>
+</data>
