@@ -32,5 +32,5 @@ if __name__ == "__main__":
     # Load:
 
     # - Write joined data as delimited
-    file_path = L_Delimited(CONFIG["extract"]["delimited_1"]).load(join)
+    file_path = L_Delimited(CONFIG["load"]["delimited_1"]).load(join)
     print(file_path)
