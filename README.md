@@ -1,6 +1,6 @@
 # Python_ETL
 
-ETL (Extraction, Transformation and Load) processes using Python
+ETL (Extraction, Transformation and Load) processes using Python:
 
   - Extract:
     - Delimited data (including or excluding headers)
