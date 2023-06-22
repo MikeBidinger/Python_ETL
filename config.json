@@ -1,0 +1,81 @@
+{
+    "extract": {
+        "delimited": {
+            "file_path": "sources/test.csv",
+            "header_state": 0,
+            "headers": [
+                "Header_1",
+                "Header_2",
+                "Header_3",
+                "Header_4",
+                "Header_5",
+                "Header_6",
+                "Header_7",
+                "Header_8",
+                "Header_9",
+                "Header_10",
+                "Header_11",
+                "Header_12",
+                "Header_13",
+                "Header_14",
+                "Header_15",
+                "Header_16",
+                "Header_17",
+                "Header_18",
+                "Header_19",
+                "Header_20"
+            ],
+            "delimiter": ";",
+            "positions": ""
+        },
+        "positional": {
+            "file_path": "sources/test_header.txt",
+            "header_state": 1,
+            "headers": [],
+            "delimiter": "",
+            "positions": [
+                0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48,
+                51, 54, 57
+            ]
+        },
+        "excel": {
+            "file_path": "sources/test_header.xlsx",
+            "header_state": 1,
+            "headers": [],
+            "delimiter": "",
+            "positions": []
+        },
+        "json_lookup": {
+            "file_path": "sources/lookup.json",
+            "xpath": "//row"
+        }
+    },
+    "transform": {
+        "join_1": {
+            "key": "Header_1"
+        }
+    },
+    "load": {
+        "delimited": {
+            "file_path": "output/test.csv",
+            "header_state": 0,
+            "headers": ["Header_1", "Description"],
+            "delimiter": ";",
+            "positions": ""
+        },
+        "positional": {
+            "file_path": "output/test.txt",
+            "header_state": 0,
+            "headers": ["Header_1", "Description"],
+            "delimiter": "",
+            "positions": [0, 8]
+        },
+        "excel": {
+            "file_path": "output/test.xlsx",
+            "header_state": 0,
+            "headers": ["Header_1", "Description"],
+            "delimiter": "",
+            "positions": []
+        }
+    }
+}
