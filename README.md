@@ -34,6 +34,13 @@ GUI usage:
 -   Header selection is separated by ";"
 -   Position selection is separated by ";" (and starts with "0")
 
+Dependencies:
+
+-   Python 3 (developed in Python 3.9.7)
+-   openpyxl (non-standard library/module)
+-   xmltodict (non-standard library/module)
+-   dicttoxml (non-standard library/module)
+
 TODO:
 
 -   Implement an append option
