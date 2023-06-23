@@ -6,6 +6,7 @@
 
 import openpyxl
 import xmltodict
+from collections import OrderedDict
 from .json_functions import read_json
 
 
@@ -134,19 +135,27 @@ class E_XML:
         headers = {}
         row_headers = []
         for row in xml:
-            for header in row:
-                if header not in headers:
-                    headers[header] = len(headers)
-                    row_headers.append(header)
+            if type(row) != str:
+                for header in row:
+                    if header not in headers:
+                        headers[header] = len(headers)
+                        row_headers.append(header)
+            else:
+                headers["rows"] = len(headers)
+                row_headers.append("rows")
+                break
         # Parse data
         data.append(row_headers)
         for row in xml:
-            row_data = ["" for x in headers]
-            for header in row:
-                if row[header] == None:
-                    row_data[headers[header]] = ""
-                else:
-                    row_data[headers[header]] = row[header]
+            if type(row) != str:
+                row_data = ["" for x in headers]
+                for header in row:
+                    if row[header] == None:
+                        row_data[headers[header]] = ""
+                    else:
+                        row_data[headers[header]] = row[header]
+            else:
+                row_data = [row]
             data.append(row_data)
         # Return parsed data
         if nr_lines != 0:
@@ -157,8 +166,9 @@ class E_XML:
         for x in xml:
             if x == element:
                 elements.append(xml[x])
-            elif type(xml[x]) is not str and len(xml[x]) > 0:
-                self._loop_children(xml[x], element, elements)
+            elif type(xml) == type(OrderedDict()):
+                if type(xml[x]) is not str and xml[x] is not None and len(xml[x]) > 0:
+                    self._loop_children(xml[x], element, elements)
 
 
 class E_JSON:
@@ -189,19 +199,27 @@ class E_JSON:
         headers = {}
         row_headers = []
         for row in json:
-            for header in row:
-                if header not in headers:
-                    headers[header] = len(headers)
-                    row_headers.append(header)
+            if type(row) != str:
+                for header in row:
+                    if header not in headers:
+                        headers[header] = len(headers)
+                        row_headers.append(header)
+            else:
+                headers["rows"] = len(headers)
+                row_headers.append("rows")
+                break
         # Parse data
         data.append(row_headers)
         for row in json:
-            row_data = ["" for x in headers]
-            for header in row:
-                if row[header] == None:
-                    row_data[headers[header]] = ""
-                else:
-                    row_data[headers[header]] = row[header]
+            if type(row) != str:
+                row_data = ["" for x in headers]
+                for header in row:
+                    if row[header] == None:
+                        row_data[headers[header]] = ""
+                    else:
+                        row_data[headers[header]] = row[header]
+            else:
+                row_data = [row]
             data.append(row_data)
         # Return parsed data
         if nr_lines != 0:
@@ -212,5 +230,6 @@ class E_JSON:
         for x in json:
             if x == element:
                 elements.append(json[x])
-            elif type(json[x]) is not str and len(json[x]) > 0:
-                self._loop_children(json[x], element, elements)
+            elif type(json) == type(OrderedDict()):
+                if type(json[x]) is not str and json[x] is not None and len(json[x]) > 0:
+                    self._loop_children(json[x], element, elements)
