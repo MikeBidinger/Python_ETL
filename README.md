@@ -32,7 +32,7 @@ GUI usage:
 
 -   Most of the GUI is self explanatory
 -   Header selection is separated by ";"
--   Position selection is separated by ";" (and start with "0")
+-   Position selection is separated by ";" (and starts with "0")
 
 TODO:
 
