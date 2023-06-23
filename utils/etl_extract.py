@@ -4,8 +4,8 @@
 # Script:    Extraction of data
 # ------------------------------------------------------------------------------
 
-import xmltodict
 import openpyxl
+import xmltodict
 from .json_functions import read_json
 
 
