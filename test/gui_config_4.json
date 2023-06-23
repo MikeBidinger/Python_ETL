@@ -1,0 +1,20 @@
+{
+    "extract": {
+        "delimited": {
+            "file_path": "C:/Users/MB91448/Documents/Coding/Python/Projects/ETL/sources/test_header.txt",
+            "header_state": 1,
+            "headers": [],
+            "delimiter": "\t",
+            "positions": ""
+        }
+    },
+    "load": {
+        "delimited": {
+            "file_path": "C:/Users/MB91448/Documents/Coding/Python/Projects/ETL/output/test.txt",
+            "header_state": 1,
+            "headers": [],
+            "delimiter": "\t",
+            "positions": ""
+        }
+    }
+}

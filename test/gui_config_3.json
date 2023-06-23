@@ -1,0 +1,41 @@
+{
+    "extract": {
+        "delimited": {
+            "file_path": "C:/Users/MB91448/Documents/Coding/Python/Projects/ETL/sources/test.csv",
+            "header_state": 0,
+            "headers": [
+                "Header_1",
+                "Header_2",
+                "Header_3",
+                "Header_4",
+                "Header_5",
+                "Header_6",
+                "Header_7",
+                "Header_8",
+                "Header_9",
+                "Header_10",
+                "Header_11",
+                "Header_12",
+                "Header_13",
+                "Header_14",
+                "Header_15",
+                "Header_16",
+                "Header_17",
+                "Header_18",
+                "Header_19",
+                "Header_20"
+            ],
+            "delimiter": ";",
+            "positions": ""
+        }
+    },
+    "load": {
+        "delimited": {
+            "file_path": "C:/Users/MB91448/Documents/Coding/Python/Projects/ETL/output/test.csv",
+            "header_state": 1,
+            "headers": [],
+            "delimiter": ";",
+            "positions": ""
+        }
+    }
+}

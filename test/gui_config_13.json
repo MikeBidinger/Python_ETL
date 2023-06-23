@@ -1,0 +1,24 @@
+{
+    "extract": {
+        "delimited": {
+            "file_path": "C:/Users/MB91448/Documents/Coding/Python/Projects/ETL/sources/test_header.csv",
+            "header_state": 1,
+            "headers": [],
+            "delimiter": ";",
+            "positions": [],
+            "xpath": ""
+        }
+    },
+    "load": {
+        "json": {
+            "file_path": "C:/Users/MB91448/Documents/Coding/Python/Projects/ETL/output/test.json",
+            "header_state": 0,
+            "headers": [
+                "Header_2",
+                "Header_5"
+            ],
+            "delimiter": "",
+            "positions": []
+        }
+    }
+}

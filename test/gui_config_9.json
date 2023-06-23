@@ -1,0 +1,21 @@
+{
+    "extract": {
+        "xml": {
+            "file_path": "C:/Users/MB91448/Documents/Coding/Python/Projects/ETL/sources/test.xml",
+            "header_state": 1,
+            "headers": [],
+            "delimiter": "",
+            "positions": [],
+            "xpath": "/data/rows/row"
+        }
+    },
+    "load": {
+        "delimited": {
+            "file_path": "C:/Users/MB91448/Documents/Coding/Python/Projects/ETL/output/test.csv",
+            "header_state": 1,
+            "headers": [],
+            "delimiter": ";",
+            "positions": []
+        }
+    }
+}

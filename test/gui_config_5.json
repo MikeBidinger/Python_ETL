@@ -1,0 +1,62 @@
+{
+    "extract": {
+        "positional": {
+            "file_path": "C:/Users/MB91448/Documents/Coding/Python/Projects/ETL/sources/test_header.txt",
+            "header_state": 1,
+            "headers": [],
+            "delimiter": "",
+            "positions": [
+                0,
+                3,
+                6,
+                9,
+                12,
+                15,
+                18,
+                21,
+                24,
+                27,
+                30,
+                33,
+                36,
+                39,
+                42,
+                45,
+                48,
+                51,
+                54,
+                57
+            ]
+        }
+    },
+    "load": {
+        "positional": {
+            "file_path": "C:/Users/MB91448/Documents/Coding/Python/Projects/ETL/output/test.txt",
+            "header_state": 1,
+            "headers": [],
+            "delimiter": "",
+            "positions": [
+                0,
+                3,
+                6,
+                9,
+                12,
+                15,
+                18,
+                21,
+                24,
+                27,
+                30,
+                33,
+                36,
+                39,
+                42,
+                45,
+                48,
+                51,
+                54,
+                57
+            ]
+        }
+    }
+}
