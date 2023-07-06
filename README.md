@@ -45,3 +45,9 @@ TODO:
 
 -   Implement an append option
 -   Implement transformation options
+-   
+TODO:
+
+-   Implement an append option
+-   Implement transformation options
+-   Implement search key function
