@@ -103,6 +103,7 @@ class E_Excel:
                 else:
                     row_data.append(str(col[row].value))
             data.append(row_data)
+        wb.close()
         # Return parsed data
         return data
 
