@@ -12,6 +12,7 @@ ETL processes using a Tkinter GUI with Python:
     -   Excel data (including or excluding headers)
     -   XML data
     -   JSON data
+    -   ... more will follow soon!
 
 -   Transform (...not yet implemented in the GUI):
 
@@ -27,6 +28,7 @@ ETL processes using a Tkinter GUI with Python:
     -   Excel data
     -   XML data
     -   JSON data
+    -   ... more will follow soon!
 
 GUI usage:
 
